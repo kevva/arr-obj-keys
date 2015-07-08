@@ -1,0 +1,34 @@
+{
+  "name": "arr-obj-keys",
+  "version": "1.0.0",
+  "description": "Get the unique keys of an array of objects",
+  "license": "MIT",
+  "repository": "kevva/arr-obj-keys",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Martensson",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "array",
+    "keys",
+    "object",
+    "unique"
+  ],
+  "dependencies": {
+    "array-union": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.0.4",
+    "deep-equal": "^1.0.0"
+  }
+}

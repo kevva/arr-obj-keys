@@ -1,7 +1,7 @@
 {
   "name": "arr-obj-keys",
   "version": "1.0.0",
-  "description": "Get the unique keys of an array of objects",
+  "description": "Get the keys of an array of objects",
   "license": "MIT",
   "repository": "kevva/arr-obj-keys",
   "author": {
@@ -24,9 +24,6 @@
     "object",
     "unique"
   ],
-  "dependencies": {
-    "array-union": "^1.0.1"
-  },
   "devDependencies": {
     "ava": "^0.0.4",
     "deep-equal": "^1.0.0"

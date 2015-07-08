@@ -1,6 +1,4 @@
 'use strict';
-var arrayUnion = require('array-union');
-
 module.exports = function (arr) {
 	var ret = [];
 
@@ -9,7 +7,7 @@ module.exports = function (arr) {
 	}
 
 	for (var i = 0; i < arr.length; i++) {
-		ret = arrayUnion(ret, Object.keys(arr[i]));
+		ret = ret.concat(Object.keys(arr[i]));
 	}
 
 	return ret;

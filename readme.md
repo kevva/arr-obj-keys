@@ -1,6 +1,6 @@
 # arr-obj-keys [![Build Status](https://travis-ci.org/kevva/arr-obj-keys.svg?branch=master)](https://travis-ci.org/kevva/arr-obj-keys)
 
-> Get the unique keys of an array of objects
+> Get the keys of an array of objects
 
 
 ## Install
@@ -24,7 +24,7 @@ arrObjKeys([{
 }, {
 	cat: 'meow'
 }]);
-//=> ['cat', 'foo', 'unicorn']
+//=> ['cat', 'foo', 'unicorn', 'cat']
 ```
 
 

@@ -1,18 +1,20 @@
-'use strict';
-var deepEqual = require('deep-equal');
-var test = require('ava');
-var arrObjKeys = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	var arr = arrObjKeys([{
-		cat: 'meow'
+test('get keys from an array of objects', t => {
+	t.deepEqual(m([{
+		cat: 'meow',
+		foo: 'unicorn'
 	}, {
-		foo: 'bar'
+		bar: 'foo'
 	}, {
-		unicorn: 'foo'
+		unicorn: 'meow'
 	}, {
-		cat: 'meow'
-	}]);
+		cat: 'foo',
+		hello: ['there']
+	}]), ['cat', 'foo', 'bar', 'unicorn', 'cat', 'hello']);
+});
 
-	t.assert(deepEqual(arr, ['cat', 'foo', 'unicorn', 'cat']));
+test('accepts an array', t => {
+	t.throws(m.bind(null, 'string'), 'Expected an `Array`, got `string`');
 });

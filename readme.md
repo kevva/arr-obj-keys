@@ -13,7 +13,7 @@ $ npm install --save arr-obj-keys
 ## Usage
 
 ```js
-var arrObjKeys = require('arr-obj-keys');
+const arrObjKeys = require('arr-obj-keys');
 
 arrObjKeys([{
 	cat: 'meow'
@@ -34,12 +34,11 @@ arrObjKeys([{
 
 #### array
 
-*Required*  
-Type: `array`
+Type: `Array`
 
 An array of objects with the keys you want to get.
 
 
 ## License
 
-MIT © [Kevin Martensson](http://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
